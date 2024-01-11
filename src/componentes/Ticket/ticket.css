@@ -1,0 +1,38 @@
+/* TICKET STYLE */
+.ticket {
+    display: flex;
+    flex-direction: row;
+    width: 780px;
+    margin: auto;
+}
+
+.ticketUno,
+.ticketDos {
+    /* border: solid 1px black; */
+    border-radius: 10px;
+    box-shadow: 5px 5px lightgray;
+    background-color: white;
+}
+
+.ticketUno {
+    flex-grow: 2;
+}
+
+.ticketDos {
+    flex-grow: 1;
+    border-left: dashed 2px lightgray;
+}
+
+.ticketTitulo {
+    background-color: gold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 2rem;
+}
+
+.contenedor-ticket {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
