@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  background-color: #edf7f5;
+  background-color: #f0f0f0;
 }
 
 code {
@@ -17,4 +17,8 @@ code {
 ul, ol{
   list-style: none;
   padding: 0;
+}
+
+*{
+  border: solid 1px red;
 }

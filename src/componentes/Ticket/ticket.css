@@ -1,15 +1,17 @@
 /* TICKET STYLE */
-.ticket {
+/* .ticket-container {
     display: flex;
     flex-direction: row;
-    width: 780px;
+    width: 100%;
     margin: auto;
+    transform: rotate(90deg);
+
 }
 
 .ticketUno,
-.ticketDos {
+.ticketDos { */
     /* border: solid 1px black; */
-    border-radius: 10px;
+    /* border-radius: 10px;
     box-shadow: 5px 5px lightgray;
     background-color: white;
 }
@@ -31,8 +33,7 @@
 }
 
 .contenedor-ticket {
-    /* border: solid 1px black; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} */

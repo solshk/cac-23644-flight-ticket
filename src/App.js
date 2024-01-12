@@ -1,13 +1,12 @@
 import "./App.css";
 import Navbar from "./componentes/Navbar/Navbar.jsx";
-import Input from "./componentes/Input/Input.jsx";
-import Ticket from "./componentes/Ticket/Ticket.jsx";
+import Main from "./componentes/Main/Main.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Input />
+      <Navbar />
+      <Main/>
     </div>
   );
 }

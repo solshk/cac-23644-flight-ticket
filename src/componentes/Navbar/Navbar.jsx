@@ -12,7 +12,7 @@ function Navbar() {
             </div>
         </div>
         <nav>
-            <h1 className='navbar-link'>Tuticket</h1>
+            <h1 className='navbar-link'>Tuki</h1>
         
             <ul className='navbar-links'>
                 <li className='navbar-link'>About us</li>
