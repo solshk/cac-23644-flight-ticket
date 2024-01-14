@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import { sendDatos } from "../Input/Input.jsx";
+import { sendData } from "../Input/Input.jsx";
 import './ticket.css';
 
 function Ticket() {
 
-    const datos = useContext(sendDatos);
+    const data = useContext(sendData);
 
     return (
         <div className='ticket-container'>
@@ -13,7 +13,7 @@ function Ticket() {
                 <div className="ticket-titulo">
                     <div>
                         <h4>BOARDING PASS</h4>
-                        <p>FIRST CLASS</p>
+                        <p>{data.class || "FIRST CLASS"}</p>
                     </div>
                     <div className="ticket-codigo-aeropuerto">
                         <p>EZE</p>
@@ -26,59 +26,63 @@ function Ticket() {
 
                 <div className="ticket-destino">
                     <h6>TO:</h6>
-                    <h4>BUENOS AIRES</h4>
-                    <p>EZEIZA INTERNATIONAL AIRPORT</p>
+                    <h4>{data.toCity || "BUENOS AIRES"}</h4>
+                    <p>{data.toAirport || "EZEIZA INTERNATIONAL AIRPORT"}</p>
                 </div>
 
-                <div className="ticket-datos">
-                    <div className="ticket-datos-div">
+                <div className="ticket-data">
+                    <div className="ticket-data-div">
                         <h6>FROM:</h6>
-                        <p>NEUQUEN</p>
-                        <p>CPC, San Martin De Los Andes</p>
+                        <p>{data.fromCity || "NEUQUEN"}</p>
+                        <p>{data.fromAirport || "CPC, San Martin De Los Andes"}</p>
                     </div>
 
-                    <div className="ticket-datos-flight">
+                    <div className="ticket-data-flight">
                         <div>
                             <h6>DATE:</h6>
-                            <p>21/MAR</p>
+                            <p>{data.date || "21/DEC"}</p>
                         </div>
                         <div>
                             <h6>FLIGHT:</h6>
-                            <p>27C</p>
+                            <p>{data.flight || "0071C"}</p>
                         </div>
                         <div>
                             <h6>SEAT:</h6>
-                            <p>58</p>
+                            <p>{data.seat || "58"}</p>
                         </div>
                     </div>
 
-                    <div className="ticket-datos-flight">
+                    <div className="ticket-data-flight">
                         <div>
                             <h6>DEPARTING AT:</h6>
-                            <p>13:25</p>
-                            <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline"}}>
+                            <p>{data.departTime || "10:15"}</p>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                                 <h6>GATE:</h6>
-                                <p style={{width: "100%", marginLeft:".5rem"}}>3D</p>
+                                <p style={{ width: "100%", marginLeft: ".5rem" }}>
+                                    {data.departGate || "3D"}
+                                </p>
                             </div>
                         </div>
                         <div>
                             <h6>ARRIVING AT:</h6>
-                            <p>19:50</p>
-                            <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline"}}>
+                            <p>{data.arriveTime || "18:50"}</p>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                                 <h6>GATE:</h6>
-                                <p style={{width: "100%", marginLeft:".5rem"}}>3D</p>
+                                <p style={{ width: "100%", marginLeft: ".5rem" }}>
+                                    {data.arriveGate || "3D"}
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="ticket-datos-div">
+                    <div className="ticket-data-div">
                         <h6>NAME:</h6>
-                        <p>{datos.name || "YOUR NAME"}</p>
+                        <p>{data.fname || "YourName"}</p>
                     </div>
 
-                    <div className="ticket-datos-div">
+                    <div className="ticket-data-div">
                         <h6>RESERVATION CODE:</h6>
-                        <p>{datos.reservationCode || "000ABC"}</p>
+                        <p>{data.reservationCode || "000ABC"}</p>
                     </div>
                 </div>
             </div>

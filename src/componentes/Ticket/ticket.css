@@ -62,26 +62,26 @@
 .ticket-destino p{
     margin-bottom:0;
 }
-.ticket-datos{
+.ticket-data{
     padding: 1.3rem;
 }
-.ticket-datos-div p{
-    font-size: 1.4rem;
+.ticket-data-div p{
+    font-size: 1.2rem;
     background-color: #dfdfdf;
     padding-left: .5rem;
     padding-right: .5rem;
 }
-.ticket-datos-flight{
+.ticket-data-flight{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
 }
-.ticket-datos-flight div{
+.ticket-data-flight div{
     width: 100%;
 }
-.ticket-datos-flight div p{
-    font-size: 1.4rem;
+.ticket-data-flight div p{
+    font-size: 1.2rem;
     background-color: #dfdfdf;
     padding-left: .5rem;
     padding-right: .5rem;
