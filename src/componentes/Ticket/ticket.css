@@ -1,4 +1,93 @@
-/* TICKET STYLE */
+.ticket-container{
+    padding: 1.5rem;
+}
+
+/* TICKET 1*/
+.ticket-final{
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px #727272;
+    /* width: 90%; */
+}
+.ticket-titulo{
+    background-color: #dfdfdf;
+    color: #727272;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1.3rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ticket-titulo div h4{
+    margin-bottom: 0;
+}
+.ticket-titulo div p{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.ticket-codigo-aeropuerto{
+    background-color: #5a5a5a;
+    color: white;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 25%;
+    text-align: center;
+}
+.ticket-titulo .ticket-codigo-aeropuerto p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin:0;
+    padding:0;
+}
+.avioncito{
+    width: 6rem;
+    transform: rotate(270deg);
+    position: relative;
+    top:-15px;
+    left: 20px;
+}
+.ticket-destino{
+    padding: 1.3rem;
+}
+.ticket-destino h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    overflow-wrap: break-word;
+}
+.ticket-destino p{
+    margin-bottom:0;
+}
+.ticket-datos{
+    padding: 1.3rem;
+}
+.ticket-datos-div p{
+    font-size: 1.4rem;
+    background-color: #dfdfdf;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.ticket-datos-flight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.ticket-datos-flight div{
+    width: 100%;
+}
+.ticket-datos-flight div p{
+    font-size: 1.4rem;
+    background-color: #dfdfdf;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
 /* .ticket-container {
     display: flex;
     flex-direction: row;
@@ -7,33 +96,4 @@
     transform: rotate(90deg);
 
 }
-
-.ticketUno,
-.ticketDos { */
-    /* border: solid 1px black; */
-    /* border-radius: 10px;
-    box-shadow: 5px 5px lightgray;
-    background-color: white;
-}
-
-.ticketUno {
-    flex-grow: 2;
-}
-
-.ticketDos {
-    flex-grow: 1;
-    border-left: dashed 2px lightgray;
-}
-
-.ticketTitulo {
-    background-color: gold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-left: 2rem;
-}
-
-.contenedor-ticket {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} */
+*/

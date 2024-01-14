@@ -6,7 +6,7 @@ export const sendDatos = createContext();
 
 function Input() {
 
-  const [datos, setDatos] = useState({ nombre: "sol", nroReserva: "123"});
+  const [datos, setDatos] = useState({ nombre: "sol", nroReserva: "123" });
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -32,15 +32,18 @@ function Input() {
   return (
     <>
       <div className="input">
+        <h2>Free Airplane Ticket Generator</h2>
+        <p>Create airplane tickets to remember the places you visited!</p>
+
         <form className='form-container'>
 
           <div className="mb-3">
-            <label className="form-label">Nombre:</label>
-            <input name="nombre" className="form-control" type="text" value={datos.nombre} onChange={(e) => handleChange(e)} />
+            <label className="form-label">Name:</label>
+            <input name="name" className="form-control" type="text" value={datos.nombre} onChange={(e) => handleChange(e)} />
           </div>
           <div className="mb-3">
-            <label className="form-label">Numero de Reserva:</label>
-            <input name="nroReserva" className="form-control" type="text" value={datos.nroReserva} onChange={(e) => handleChange(e)} />
+            <label className="form-label">Reservation Code:</label>
+            <input name="reservationCode" className="form-control" type="text" value={datos.nroReserva} onChange={(e) => handleChange(e)} />
           </div>
 
           {/* <button type="submit" className="btn btn-success">Generar ticket</button> */}
