@@ -16,7 +16,7 @@ function Ticket() {
                         <p>{data.class || "FIRST CLASS"}</p>
                     </div>
                     <div className="ticket-codigo-aeropuerto">
-                        <p>EZE</p>
+                        <p>{data.toAirportCode || "EZE"}</p>
                     </div>
                 </div>
 

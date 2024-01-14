@@ -20,6 +20,9 @@ function Input() {
       case "toAirport":
         setData({ ...data, toAirport: e.target.value });
         break;
+      case "toAirportCode":
+        setData({ ...data, toAirportCode: e.target.value });
+        break;
       case "fromCity":
         setData({ ...data, fromCity: e.target.value });
         break;
@@ -61,8 +64,8 @@ function Input() {
     <>
       <div className="input">
         <div className="input-container">
-          <h2>Free Airplane Ticket Generator</h2>
-          <p>Create airplane tickets to remember the places you visited!</p>
+          <h2>Free Plane Ticket Generator</h2>
+          <p>Create plane tickets as souvenirs to remember the places you traveled to!</p>
 
           <form className='form-container'>
             <div className="mb-3">
@@ -75,9 +78,16 @@ function Input() {
               <input name="toCity" className="form-control" type="text" value={data.toCity} onChange={(e) => handleChange(e)} />
             </div>
 
-            <div className="mb-3">
-              <label className="form-label">Destination: (Airport)</label>
-              <input name="toAirport" className="form-control" type="text" value={data.toAirport} onChange={(e) => handleChange(e)} />
+            <div className="mb-3 d-flex gap-3">
+              <div className="mb-3">
+                <label className="form-label">Destination: (Airport)</label>
+                <input name="toAirport" className="form-control" type="text" value={data.toAirport} onChange={(e) => handleChange(e)} />
+              </div>
+
+              <div className="mb-3">
+                <label className="form-label">Airport code:</label>
+                <input name="toAirportCode" className="form-control" type="text" value={data.toAirportCode} onChange={(e) => handleChange(e)} />
+              </div>
             </div>
 
             <div className="mb-3">
@@ -90,7 +100,7 @@ function Input() {
               <input name="fromAirport" className="form-control" type="text" value={data.fromAirport} onChange={(e) => handleChange(e)} />
             </div>
 
-            <div className="mb-3 d-flex gap-2">
+            <div className="mb-3 d-flex gap-3">
               <div>
                 <label className="form-label">Date:</label>
                 <input name="date" className="form-control" type="text" value={data.date} onChange={(e) => handleChange(e)} />
@@ -105,7 +115,7 @@ function Input() {
               </div>
             </div>
 
-            <div className="mb-3 d-flex gap-2">
+            <div className="mb-3 d-flex gap-3">
               <div>
                 <label className="form-label">Departure time:</label>
                 <input name="departTime" className="form-control" type="text" value={data.departTime} onChange={(e) => handleChange(e)} />
@@ -116,7 +126,7 @@ function Input() {
               </div>
             </div>
 
-            <div className="mb-3 d-flex gap-2">
+            <div className="mb-3 d-flex gap-3">
               <div>
                 <label className="form-label">Departure gate:</label>
                 <input name="departGate" className="form-control" type="text" value={data.departGate} onChange={(e) => handleChange(e)} />

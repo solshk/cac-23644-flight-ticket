@@ -7,7 +7,7 @@ function Navbar() {
         <div className="marquee">
             <div className="track">
                 <div className="content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi saepe consectetur, aut animi quia perspiciatis recusandae laborum esse facilis deleniti non quibusdam blanditiis culpa fuga architecto consequatur. Doloremque, reprehenderit dolores. 
+                    FREE plane ticket 
                 </div>
             </div>
         </div>
