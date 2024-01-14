@@ -4,13 +4,6 @@ import './navbar.css';
 function Navbar() {
   return (
       <>
-        <div className="marquee">
-            <div className="track">
-                <div className="content">
-                    FREE plane ticket 
-                </div>
-            </div>
-        </div>
         <nav>
             <h1 className='navbar-link'>Tuki</h1>
         
