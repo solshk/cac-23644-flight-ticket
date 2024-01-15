@@ -6,8 +6,11 @@ function Navbar() {
         <>
             <nav>
                 <div className="nav-container">
-                    <h1>Tuki</h1>
-
+                    <div className='d-flex align-items-center gap-3'>
+                        <img src="./avion.png" alt="avioncito"/>
+                        <h1>Tuki</h1>
+                    </div>
+                    
                     <ul className='navbar-links'>
                         <li>
                             <a href="#">About us</a>

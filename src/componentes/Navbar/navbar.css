@@ -14,7 +14,13 @@ nav{
     margin: 1rem auto 1rem auto;
     width: 70%;
 }
-.nav-container h1{
+.nav-container div img{
+    width: 2rem;
+    border:solid 1px #161c35;
+    border-radius: 25px;
+    padding: .5rem;
+}
+.nav-container div h1{
     padding: 0;
     margin: 0;
 }
