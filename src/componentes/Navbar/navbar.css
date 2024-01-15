@@ -24,6 +24,9 @@ nav{
     padding: 0;
     margin: 0;
 }
+.nav-container div h1:hover{
+    color: #2ccdca;
+}
 .nav-container ul{
     display: flex;
     flex-direction: row;
@@ -38,7 +41,12 @@ nav{
 }
 .navbar-links li .active {
     color: #edf7f5;
-    background-color: #161c35;
+    background-color: #2ccdca;
     padding:.8rem;
     border-radius: 25px;
+}
+.navbar-links li :hover {
+    padding: .8rem;
+    border-radius: 25px;
+    border: solid 1px #2ccdca;
 }
