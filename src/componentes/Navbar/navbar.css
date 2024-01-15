@@ -1,15 +1,38 @@
 nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    border: solid 2px #161c35;
+    border-radius: 50px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem auto 1rem auto;
+    width: 70%;
 }
-.navbar-links{
+.nav-container h1{
+    padding: 0;
+    margin: 0;
+}
+.nav-container ul{
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
-.navbar-link{
-    padding: 1rem;
+.navbar-links li a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar-links li .active {
+    color: #edf7f5;
+    background-color: #161c35;
+    padding:.8rem;
+    border-radius: 25px;
 }
