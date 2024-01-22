@@ -52,7 +52,7 @@ function Ticket() {
                         </div>
                     </div>
 
-                    <div className="ticket-data-flight">
+                    <div className="ticket-data-flight d-flex align-items-end">
                         <div>
                             <h6>DEPARTING AT:</h6>
                             <p>{data.departTime || "10:15"}</p>

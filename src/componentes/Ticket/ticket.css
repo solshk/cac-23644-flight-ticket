@@ -1,5 +1,9 @@
 .ticket-container{
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 /* TICKET 1*/
@@ -7,6 +11,9 @@
     background-color: white;
     border-radius: 10px;
     border: solid 1px #727272;
+    min-width: 400px;
+    max-width: 500px;
+    width: 100%;
 }
 .ticket-titulo{
     background-color: #dfdfdf;
@@ -86,14 +93,11 @@
     padding-right: .5rem;
 }
 
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 580px) {
     .ticket-final {
-        max-width: 60%;
+        min-width: 200px;
+        max-width: 400px;
+        width: 100%;
     }
 }
-@media only screen and (max-width: 768px) {
-    .ticket-final {
-        min-width: 100%;
-    }
-}
-      
