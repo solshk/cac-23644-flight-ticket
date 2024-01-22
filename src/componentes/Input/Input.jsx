@@ -78,7 +78,7 @@ function Input() {
               <input name="toCity" className="form-control" type="text" value={data.toCity} onChange={(e) => handleChange(e)} />
             </div>
 
-            <div className="mb-3 d-flex gap-3">
+            <div className="mb-3 d-flex gap-3 align-items-end">
               <div className="mb-3">
                 <label className="form-label">Destination: (Airport)</label>
                 <input name="toAirport" className="form-control" type="text" value={data.toAirport} onChange={(e) => handleChange(e)} />
@@ -100,7 +100,7 @@ function Input() {
               <input name="fromAirport" className="form-control" type="text" value={data.fromAirport} onChange={(e) => handleChange(e)} />
             </div>
 
-            <div className="mb-3 d-flex gap-3">
+            <div className="mb-3 d-flex gap-3 align-items-end">
               <div>
                 <label className="form-label">Date:</label>
                 <input name="date" className="form-control" type="text" value={data.date} onChange={(e) => handleChange(e)} />
@@ -115,7 +115,7 @@ function Input() {
               </div>
             </div>
 
-            <div className="mb-3 d-flex gap-3">
+            <div className="mb-3 d-flex gap-3 align-items-end">
               <div>
                 <label className="form-label">Departure time:</label>
                 <input name="departTime" className="form-control" type="text" value={data.departTime} onChange={(e) => handleChange(e)} />
@@ -126,7 +126,7 @@ function Input() {
               </div>
             </div>
 
-            <div className="mb-3 d-flex gap-3">
+            <div className="mb-3 d-flex gap-3 align-items-end">
               <div>
                 <label className="form-label">Departure gate:</label>
                 <input name="departGate" className="form-control" type="text" value={data.departGate} onChange={(e) => handleChange(e)} />

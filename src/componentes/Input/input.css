@@ -11,3 +11,12 @@
 .form-container div{
     width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    .input-container {
+        padding: .5rem;
+    }
+    .form-container{
+        padding: 0;
+    }
+}
