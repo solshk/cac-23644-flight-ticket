@@ -11,7 +11,7 @@ function Navbar() {
                         <h1>Tuki</h1>
                     </div>
                     
-                    <ul className='navbar-links'>
+                    <ul className='navbar-links' id='navbar-links'>
                         <li>
                             <a href="#">About us</a>
                         </li>

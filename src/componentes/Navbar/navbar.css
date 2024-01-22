@@ -50,3 +50,9 @@ nav{
     border-radius: 25px;
     border: solid 1px #2ccdca;
 }
+
+@media only screen and (max-width: 768px) {
+    #navbar-links{
+        display: none;
+    }
+}
